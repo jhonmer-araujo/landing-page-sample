@@ -1,0 +1,146 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    margin-top: -15px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+}
+h1{
+    margin-right: auto;
+    padding-top: .3em;
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+figure {
+    flex-direction: column;
+}
+nav {
+    flex-direction: column;
+    text-align: end;
+    padding: 2em;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding-right: 1em;
+}
+.developers-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    padding-top: 3rem;
+}
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+article {
+    flex-direction: column;
+    padding: 5em;
+    text-align: center;
+}
+article p {
+    padding: 1em;
+    margin: 0 5rem 0 5rem;
+}
+article:hover {
+    background-color: #eeeeee;
+    box-shadow: #333 0 0 10px;
+}
+.fa.fa-laptop, .fa.fa-mobile {
+    font-size: 3em;
+    color: #333;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+form {
+    width: 50%;
+    padding: 1em;
+    background-color: white;
+}
+label {
+    display: block;
+    text-align: center;
+    padding: 5em 0 3em 0;
+    font-size: x-large;
+}
+input {
+    display: inline-block;
+    text-align: center;
+    padding-left: 3rem;
+}
+input[type="email"] {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-left: 10px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}   
+footer {
+    background-color: rgb(96, 96, 96);
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: unset;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+@media screen and (max-width: 600px) {
+    header{
+        display: block;
+    }
+    header figure, header nav {
+        text-align: center;
+    }
+    header img {
+        margin-top: 3em;
+    }
+    header h1{
+        margin: 0;
+        padding: 1em;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .articles-container, .form-container {
+        display: block;
+    }
+    video {
+        width: 100% !important;
+    }
+    form {
+        width: auto;
+        text-align: center;
+    }
+    input[type="submit"] {
+        margin-top: 2em;
+    }
+}
